@@ -31,11 +31,12 @@ public class Car
 
     public Car()
     {
-        
+        CarLot._numberOfCars++;
     }
 
     public Car(string make, string model, int year, bool isDriveable)
     {
+        CarLot._numberOfCars++;
         Make = make;
         Model = model;
         year = year;

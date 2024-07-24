@@ -26,6 +26,8 @@ namespace CarLotSimulator
             //*************BONUS*************//
 
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
+            
+            Console.WriteLine($"Cars created : {CarLot._numberOfCars}");
 
             var carOne = new Car();
             carOne.Make = "Toyota";
@@ -35,6 +37,8 @@ namespace CarLotSimulator
             
             carOne.MakeEngineNoise("Vroom");
             carOne.MakeHonkNoise("Honk");
+            
+            Console.WriteLine($"Cars created : {CarLot._numberOfCars}");
 
             carLotone.parkinglot.Add(carOne);
 
@@ -49,12 +53,16 @@ namespace CarLotSimulator
             carTwo.MakeHonkNoise("Groom");
             carTwo.MakeHonkNoise("Beeeeep");
             
+            Console.WriteLine($"Cars created : {CarLot._numberOfCars}");
+            
             carLotone.parkinglot.Add(carTwo);
 
             var carThree = new Car(make: "Ford", model: "Fusion", year: 2017, isDriveable: true);
             
             carThree.MakeEngineNoise("Broom");
             carThree.MakeHonkNoise("peep peep");
+            
+            Console.WriteLine($"Cars created : {CarLot._numberOfCars}");
             
             carLotone.parkinglot.Add(carThree);
 

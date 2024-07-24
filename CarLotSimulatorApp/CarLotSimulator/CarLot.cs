@@ -5,6 +5,7 @@ namespace CarLotSimulator;
 
 public class CarLot
 {
+    public static int _numberOfCars;
     public List<Car> parkinglot { get; set; } = new List<Car>();
 
     public void CheckCars()
